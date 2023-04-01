@@ -145,6 +145,40 @@
   font-size: 60px;
   margin-top: 0px;
 }
+/* --------------------- */
+/* Let's connect styling */
+/* --------------------- */
+.LetsConnect {
+  background-color: #0a9396;
+  height: 80vh;
+  padding-top: 20vh;
+  color: #ffffff;
+}
+.flexColumnConnect {
+  display: flex;
+  height: 80vh;
+  padding: 0px 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.flexItemConnect2 {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+.flexItemConnect3 {
+  margin-top: 50px;
+}
+.resume {
+  padding: 15px 70px;
+  background-color: #001d3d;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.iconLinks {
+  text-decoration: none;
+}
 /* ------------------- */
 /* Media Query styling */
 /* ------------------- */
