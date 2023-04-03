@@ -16,7 +16,9 @@ function Landing() {
                 <div className="flexItem">
                     <h3 className="landingText">Software Engineer / All Things C# / Forward Thinker</h3>
                 </div>
-                <img className="arrow" src={downArrow} />
+                <div className="flexItemArrowDiv">
+                    <img className="arrow" src={downArrow} />
+                </div>
             </div>
         </div>
     );
