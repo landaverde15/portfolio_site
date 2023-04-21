@@ -25,7 +25,7 @@ function AboutMe() {
                     <h4 className="aboutText">
                         Hello! My name is Erik. I am a Software Engineer from El Salvador living in Los Angeles, CA.
                         During my journey through college internships and exploring all the programming technologies there are, 
-                        I discovered that Back End Development grew on me and would be my favorite to this day. When I am not coding I am either playing with my {age} year old son, watching anime, trying new foods with my wife and son, or training jit jitsu.
+                        I discovered that Back End Development grew on me and would be my favorite to this day. When I am not coding I am either playing with my {age} year old son, watching anime, trying new foods with my wife and son, or training jiu jitsu.
                     </h4>
                     <h4 className="aboutText highlightedText">
                         **Note - Please excuse my lack of UI/UX creativity. I am primarily a Back End Developer.
