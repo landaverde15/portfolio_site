@@ -78,7 +78,7 @@ function Work() {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Typography variant="h5" component="span">
-                                    Programmer Analyst I (May 2020 - current)
+                                    Software Engineer I (May 2020 - current)
                                 </Typography>
                                 <Typography variant="h6">Kinecta Federal Credit Union - Manhattan Beach, CA</Typography>
                             </TimelineContent>
