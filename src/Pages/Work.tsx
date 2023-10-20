@@ -31,7 +31,7 @@ function Work() {
         <ThemeProvider theme={theme}>
             <div className="Work">
                 <div className="flexItemWork1">
-                    <h1 className="workTitle">03 Work Experience_</h1>
+                    <h1 className="workTitle">Work Experience</h1>
                 </div>
                 <div className="flexItemWork2">
                     <Timeline position="alternate">
@@ -42,19 +42,19 @@ function Work() {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Typography variant="h5" component="span">
-                                    IT Intern Helpdesk Engineer (April 2018 - May 2019)
+                                    Software Engineer II (May 2023 - October 2023)
                                 </Typography>
-                                <Typography variant="h6">NKSFB - Westwood, CA</Typography>
+                                <Typography variant="h6">Kinecta Federal Credit Union - Manhattan Beach, CA</Typography>
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
-                                <TimelineDot color="secondary" />
+                                <TimelineDot color="error" />
                                 <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Typography variant="h5" component="span">
-                                    Web Developer Intern (May 2019 - December 2019)
+                                    Software Engineer I (May 2020 - May 2023)
                                 </Typography>
                                 <Typography variant="h6">Kinecta Federal Credit Union - Manhattan Beach, CA</Typography>
                             </TimelineContent>
@@ -72,15 +72,27 @@ function Work() {
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot color="error" />
-                            <TimelineConnector />
+                            <TimelineSeparator>
+                                <TimelineDot color="secondary" />
+                                <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Typography variant="h5" component="span">
-                                    Software Engineer I (May 2020 - current)
+                                    Web Developer Intern (May 2019 - December 2019)
                                 </Typography>
                                 <Typography variant="h6">Kinecta Federal Credit Union - Manhattan Beach, CA</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineDot color="primary" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Typography variant="h5" component="span">
+                                    IT Intern Helpdesk Engineer (April 2018 - May 2019)
+                                </Typography>
+                                <Typography variant="h6">NKSFB - Westwood, CA</Typography>
                             </TimelineContent>
                         </TimelineItem>
                     </Timeline>

@@ -14,7 +14,7 @@ function Landing() {
                     <h1 className="nameTitle">Erik Landaverde &#9996;</h1>
                 </div>
                 <div className="flexItem">
-                    <h3 className="landingText">Software Engineer / All Things C# / Forward Thinker</h3>
+                    <h3 className="landingText">Software Engineer for Web, Mobile, and Cloud Platforms + General IT Technician.</h3>
                 </div>
                 <div className="flexItemArrowDiv">
                     <img className="arrow" src={downArrow} />

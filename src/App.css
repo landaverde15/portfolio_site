@@ -42,98 +42,58 @@
   position: relative;
   width: 90px;
 }
-
-/* ----------------------- */
-/* About Me Page styling */
-/* ----------------------- */
-.AboutMe {
+/* --------------------- */
+/* Services Page styling */
+/* --------------------- */
+.Services {
   background-color: #ffc300;
-  height: 100vh;
+  min-height: 70vh;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 50px;
   color: #003566;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+.servicesPageTitle {
+  font-size: 65px;
+  margin-top: 40px;
+}
+.servicesInnerDiv2 {
+  display: flex;
+  flex: row;
   justify-content: space-between;
-}
-.aboutTitle {
-  font-size: 60px;
-  margin-top: 0px;
-}
-.nonAlign {
-  align-items: baseline !important;
-}
-.highlightedText {
-  color: #0077b6 !important;
-}
-.collage {
-  width: 100%;
+  width: 95vw;
   height: auto;
-}
-.flexItemAbout1 {
-  width: 40vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.flexItemAbout2 {
-  width: 40vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  display: flex;
-  align-items: center;
-}
-/* ------------------- */
-/* Skills Page styling */
-/* ------------------- */
-.Skills {
-  background-color: #3a86ff;
-  height: 95vh;
-  padding-top: 5vh;
-  padding-left: 50px;
-  padding-right: 30px;
-  color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.skillsTitle {
-  font-size: 60px;
-  margin-top: 0px;
-}
-.skillsHighlightedText {
-  color: #ffd60a;
-  font-weight: bold;
-}
-.flexItemSkills1 {
-  width: 40vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  display: flex;
-  flex-direction: column;
-}
-.flexItemSkills2 {
-  width: 40vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
   padding-top: 50px;
+}
+.serviceBox {
+  background-color: #A1C3D8;
+  width: 27vw;
+  min-height: 360px;
+}
+.serviceInnerBox1 {
+  background-color: #6CA2C4;
+  padding: 40px 20px 40px 20px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
 }
-.skills2InnerDiv {
-  width: 100%;
+.serviceInnerBox2 {
+  padding: 10px 20px 20px 20px;
+  min-height: 200px;
 }
-
+.serviceTitle {
+  text-align: center;
+}
 /* ------------------- */
 /* Work Page styling */
 /* ------------------- */
 .Work {
   background-color: #273469;
-  height: 95vh;
+  min-height: 55vh;
   padding-top: 5vh;
+  padding-bottom: 5vh;
   color: #ffffff;
   display: flex;
   padding-left: 50px;
@@ -172,9 +132,19 @@
 .flexItemConnect3 {
   margin-top: 50px;
 }
+.flexItemConnect4 {
+  margin-top: 50px;
+}
 .resume {
   padding: 15px 70px;
   background-color: #001d3d;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.email {
+  padding: 15px 70px;
+  background-color: #306180;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
@@ -185,6 +155,25 @@
 /* ------------------- */
 /* Media Query styling */
 /* ------------------- */
+@media (max-width: 1030px) {
+  .servicesInnerDiv2 {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 95vw;
+    height: auto;
+    padding-top: 50px;
+  }
+  .serviceBox {
+    width: 70vw;
+    margin-bottom: 60px;
+  }
+  .servicesPageTitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 900px) {
 
   /* landing styling */
@@ -201,78 +190,6 @@
     margin-bottom: 20px;
   }
   .landingText {
-    font-size: 12px;
-  }
-  /* about me styling */
-  .AboutMe {
-    background-color: #ffc300;
-    height: 80vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    color: #003566;
-    display: flex;
-    flex-direction: column;
-  }
-  .aboutTitle {
-    font-size: 40px;
-    margin-top: 0px;
-  }
-  .aboutText {
-    font-size: 12px;
-  }
-  .flexItemAbout1 {
-    height: 50%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0px;
-  }
-  .flexItemAbout2 {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
-  }
-  .collage {
-    height: 200px;
-    width: auto;
-  }
-  /* Skills Styling */
-  .Skills {
-    background-color: #3a86ff;
-    height: auto;
-    padding-top: 5vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: unset;
-  }
-  .flexItemSkills1 {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-  }
-  .flexItemSkills2 {
-    width: 90%;
-    display: flex;
-    align-items: baseline;
-    padding-top: 0px;
-  }
-  .skillsTitle {
-    font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .skillsDescription {
-    margin-top: 0px;
     font-size: 12px;
   }
   /* Work Styling */
