@@ -1,211 +1,277 @@
 /* --------------- */
 /* General styling */
 /* --------------- */
+* {
+  color: #ffffff;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url(./Fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #212121;
+}
 .flexColumn {
   display: flex;
   align-items: center;
   flex-direction: column;
   height: 100%;
+  margin: 0px auto;
+}
+.flexItem {
+  width: 100%;
+}
+.headerNav {
+  position: fixed;
+  width: 100%;
+  background: #20202380;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  height: 56px;
+  display: flex;
+  justify-content: center;
+}
+.headerNavDiv {
+  display: flex;
+}
+.headerNavInnerDiv {
+  padding-top: 12px;
+}
+.headerNavName {
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Nunito';
+  margin: 0px;
+}
+.navP {
+  margin: 8px 0px 0px 0px;
+}
+.navP:hover {
+  border-bottom: 1px solid;
+}
+.headerNavDivP {
+  padding-right: 15px;
+}
+#headerNavDiv1 {
+  padding-right: 30px;
+}
+.headerLogo {
+  transition: transform .2s ease-in-out;
+}
+.headerLogo:hover {
+  transform: rotate(35deg);
+}
+.footerTxt {
+  color: #8c8c8c;
+  text-align: center;
+}
+.hamburgerMenu {
+  display: none;
 }
 /* ----------------------- */
 /* Landing Page styling */
 /* ----------------------- */
 .Landing {
-  background-color: #ffd60a;
-  height: 85vh;
-  padding-top: 15vh;
-  color: #001d3d;
+  height: auto;
+  max-width: 670px;
+  padding: 100px 20px 0px 20px;
+  margin: auto;
 }
-.nameTitle {
-  font-size: 70px;
-  margin-bottom: 20px;
+.flexItemSelfPic {
+  display: flex;
+  justify-content: space-around;
 }
 .landingCircleImg {
   height: 190px;
   width: auto;
   border-radius: 50%; 
 }
-@keyframes bouncing {
-  0% {bottom: 0;}
-  50% {bottom: 20px;}
-  100% {bottom: 0;}
+.landingDesc {
+  background-color: #404040;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 40px 0px 15px 0px;
 }
-.flexItemArrowDiv {
-  align-self: center;
-  margin-top: auto;
+.esLogo {
+  margin-left: 7px;
 }
-.arrow {
-  animation: bouncing 1s infinite ease-in-out;
-  bottom: 0;
-  display: block;
-  height: 90px;
-  position: relative;
-  width: 90px;
-}
-/* --------------------- */
-/* Services Page styling */
-/* --------------------- */
-.Services {
-  background-color: #ffc300;
-  min-height: 70vh;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  color: #003566;
+.landingFlexItem2 {
   display: flex;
-  flex-direction: column;
-}
-.servicesPageTitle {
-  font-size: 65px;
-  margin-top: 40px;
-}
-.servicesInnerDiv2 {
-  display: flex;
-  flex: row;
+  flex-direction: row;
   justify-content: space-between;
-  width: 95vw;
-  height: auto;
-  padding-top: 50px;
 }
-.serviceBox {
-  background-color: #A1C3D8;
-  width: 27vw;
-  min-height: 360px;
+.toroLogo {
+  margin-top: 18px;
 }
-.serviceInnerBox1 {
-  background-color: #6CA2C4;
-  padding: 40px 20px 40px 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.serviceInnerBox2 {
-  padding: 10px 20px 20px 20px;
-  min-height: 200px;
-}
-.serviceTitle {
+.myPortfolioBtn {
+  margin: 20px auto;
+  background-color: #80ffbf;
+  width: 150px;
+  padding: 15px;
+  border: 0px;
+  border-radius: 10px;
+  color: #212121;
+  font-weight: bold;
   text-align: center;
 }
-/* ------------------- */
+.title {
+  text-decoration: underline #ffffff;
+}
+.inlineTxt {
+  display: inline;
+  margin: 0px
+}
+.yearTitle {
+  color: #80ffbf;
+  margin-right: 30px !important;
+  margin-bottom: 5px !important;
+}
+.flexTimeline {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4px;
+}
+.flexSocials {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 7px;
+}
+.timelineDesc {
+  padding-top: 2px;
+}
+.socialsLogo {
+  margin-right: 30px;
+}
+.socialsDesc {
+  color: #80ffbf;
+}
+.pDesc {
+  line-height: 30px; 
+}
+.resumeLink {
+  text-decoration: none;
+}
+/* ----------------- */
 /* Work Page styling */
-/* ------------------- */
+/* ----------------- */
 .Work {
-  background-color: #273469;
-  min-height: 55vh;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  color: #ffffff;
-  display: flex;
-  padding-left: 50px;
-  padding-right: 30px;
-  display: flex;
-  flex-direction: column;
+  height: auto;
+  max-width: 670px;
+  padding: 100px 20px 0px 20px;
+  margin: auto;
 }
-.flexItemWork1 {
-  width: 100%;
-}
-.workTitle {
-  font-size: 60px;
-  margin-top: 0px;
-}
-/* --------------------- */
-/* Let's connect styling */
-/* --------------------- */
-.LetsConnect {
-  background-color: #0a9396;
-  height: 80vh;
-  padding-top: 20vh;
-  color: #ffffff;
-}
-.flexColumnConnect {
-  display: flex;
-  height: 80vh;
-  padding: 0px 30px;
-  flex-direction: column;
-  align-items: center;
-}
-.flexItemConnect2 {
-  display: flex;
+.projectImage {
   width: 300px;
-  justify-content: space-between;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  margin: 0px auto;
 }
-.flexItemConnect3 {
-  margin-top: 50px;
+.flexProjects {
+  display: flex;
+  flex-wrap: wrap;
 }
-.flexItemConnect4 {
-  margin-top: 50px;
+.freelanceProject {
+  padding: 0px auto;
+  width: 320px;
 }
-.resume {
-  padding: 15px 70px;
-  background-color: #001d3d;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
+.freelanceProject h3{
+  margin-bottom: 2px;
+  text-align: center;
 }
-.email {
-  padding: 15px 70px;
-  background-color: #306180;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
+.freelanceProject p{
+  margin: 2px;
+  text-align: center;
 }
-.iconLinks {
-  text-decoration: none;
+/* ----------------- */
+/* Uses Page styling */
+/* ----------------- */
+.Uses {
+  height: auto;
+  max-width: 670px;
+  padding: 100px 20px 0px 20px;
+  margin: auto;
+}
+.coderImg {
+  max-width: 100%;
+  height: auto;
+  margin: 0px auto;
+  display: block;
+}
+.flexUses {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 7px;
+}
+.usesLogo {
+  margin-right: 30px;
+}
+.usesDesc {
+  padding-top: 3px;
+}
+.bottomSpacing {
+  min-height: 200px;
 }
 /* ------------------- */
 /* Media Query styling */
 /* ------------------- */
-@media (max-width: 1030px) {
-  .servicesInnerDiv2 {
+@media screen and (max-width: 655px) {
+  .flexProject {
     display: flex;
-    flex: row;
-    justify-content: space-around;
     flex-wrap: wrap;
-    width: 95vw;
-    height: auto;
-    padding-top: 50px;
+    justify-content: space-around;
   }
-  .serviceBox {
-    width: 70vw;
-    margin-bottom: 60px;
-  }
-  .servicesPageTitle {
-    font-size: 40px;
+  .freelanceProject {
+    flex-grow: 1;
+    width: 400px;
     margin-bottom: 20px;
   }
-}
-@media (max-width: 900px) {
-
-  /* landing styling */
-  .Landing {
-    background-color: #ffd60a;
-    height: 85vh;
-    padding-top: 15vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    color: #001d3d;
+  .headerNav {
+    justify-content: space-between;
   }
-  .nameTitle {
-    font-size: 40px;
-    margin-bottom: 20px;
+  .headerNavDivP {
+    display: none;
   }
-  .landingText {
-    font-size: 12px;
+  .hamburgerMenu {
+    display: block;
+    padding-top: 12px;
+    padding-right: 10px;
   }
-  /* Work Styling */
-  .Work {
-    background-color: #273469;
-    height: auto;
-    padding-top: 5vh;
+  .menuLogo:active {
+    border: 2px solid #80ffbf;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  #headerNavDiv1 {
+    padding-left: 10px;
+  }
+  .popupMenu {
+    background-color: #2D3748;
+    height: 200px;
+    width: 100px;
+    padding-left: 10px;
+    font-size: 15px;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  .popupMenu p {
     color: #ffffff;
-    display: flex;
-    padding-left: 50px;
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
   }
-  .workTitle {
-    font-size: 40px;
-    margin-top: 0px;
+  .popupMenu p:active {
+    color: #80ffbf;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .popupMenu p:hover {
+    color: #80ffbf;
+    text-decoration: underline;
+    font-weight: bold;
   }
 }

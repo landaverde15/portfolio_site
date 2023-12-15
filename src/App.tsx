@@ -1,17 +1,22 @@
 import React from 'react';
 import './App.css';
 import Landing from './Pages/Landing';
-import Services from './Pages/Services';
+import Header from './ReusableComponents/Header';
+import { Route, Routes } from 'react-router-dom';
 import Work from './Pages/Work';
-import LetsConnect from './Pages/LetsConnect';
+import Uses from './Pages/Uses';
 
 function App() {
   return (
     <div className="App">
-      <Landing />
-      <Services />
-      <Work />
-      <LetsConnect/>
+      <div className="container">
+        <Header></Header>
+        <Routes>
+            <Route path="/" element={<Landing/>}></Route>
+            <Route path="/work" element={<Work/>}></Route>
+            <Route path="/uses" element={<Uses/>}></Route>
+        </Routes>
+      </div>
     </div>
   );
 }
