@@ -38,7 +38,7 @@ function Landing() {
                     </div>
                 </div>
                 <div className="flexItem landingFlexItem2">
-                    <div>
+                    <div className="nameDescDiv1">
                         <h2>Erik Landaverde</h2>
                         <p>Building the Web ( Web / Mobile / Cloud )</p>
                     </div>
