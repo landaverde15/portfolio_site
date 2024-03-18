@@ -113,6 +113,14 @@ function Landing() {
                             <p className="inlineTxt">Software Engineer II @ Kinecta Federal Credit Union</p>
                         </div>
                     </div>
+                    <div className="flexTimeline">
+                        <div>
+                            <h3 className="yearTitle inlineTxt">2024</h3>
+                        </div>
+                        <div className="timelineDesc">
+                            <p className="inlineTxt">.NET Engineer (Angular JS) @ Los Angeles Unified School District</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="flexItem">
                     <h2 className="title">Find Me</h2>
