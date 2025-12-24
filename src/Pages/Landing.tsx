@@ -6,7 +6,6 @@ import es from '../Images/el-salvador.png';
 import torogoz from '../Images/torogoz.png';
 import ig from '../Images/instagram.png';
 import dl from '../Images/download.png';
-import gh from '../Images/githubgreen.png';
 import li from '../Images/linkedin.png';
 import resume from '../Images/ErikResume.pdf';
 import { HashLoader } from 'react-spinners';
@@ -40,7 +39,7 @@ function Landing() {
                 </div>
                 <div className="flexItem landingFlexItem2">
                     <div className="nameDescDiv1">
-                        <h2>About Me</h2>
+                        <h2>What I Do</h2>
                         <p>.NET Core & Azure Cloud — building the modern web</p>
                     </div>
                     <div>

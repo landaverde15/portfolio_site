@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import headerLogo from '../Images/judo.png';
-import github from '../Images/github.png';
 import menu from '../Images/menu.png';
 import exit from '../Images/exit.png';
 
