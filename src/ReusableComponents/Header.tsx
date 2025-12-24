@@ -16,7 +16,7 @@ function Header() {
 
     return (
         <nav className="headerNav">
-            <div className="headerNavDiv" id="headerNavDiv1" onClick={() => {window.location.href=`/`}}>
+            <div className="headerNavDiv" id="headerNavDiv1" onClick={() => {window.location.reload();}}>
                 <div className="headerNavInnerDiv">
                     <img className="headerLogo" src={headerLogo} alt="Judo logo" />
                 </div>
@@ -29,7 +29,7 @@ function Header() {
             </div>
             {showMobileMenu ? 
                 <div className="popupMenu">
-                    <p onClick={() => {window.location.href=`/`; setShowMobileMenu(false)}}>About Me</p>
+                    <p onClick={() => {window.location.reload(); setShowMobileMenu(false)}}>About Me</p>
                 </div> : 
             ""}
         </nav>
