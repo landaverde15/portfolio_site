@@ -7,6 +7,7 @@ import torogoz from '../Images/torogoz.png';
 import ig from '../Images/instagram.png';
 import dl from '../Images/download.png';
 import gh from '../Images/githubgreen.png';
+import li from '../Images/linkedin.png';
 import resume from '../Images/ErikResume.pdf';
 import { HashLoader } from 'react-spinners';
 
@@ -33,27 +34,29 @@ function Landing() {
                 </div>
                 <div className="flexItem">
                     <div className="landingDesc">
-                        Hello, I'm a Software Engineer based in US from El Salvador!
+                        Hello, I'm a Software Architect based in US from El Salvador!
                         <img className="esLogo" src={es} alt="El Salvador" />
                     </div>
                 </div>
                 <div className="flexItem landingFlexItem2">
                     <div className="nameDescDiv1">
-                        <h2>Erik Landaverde</h2>
-                        <p>Building the Web ( Web / Mobile / Cloud )</p>
+                        <h2>About Me</h2>
+                        <p>.NET Core & Azure Cloud — building the modern web</p>
                     </div>
                     <div>
                         <img className="toroLogo" src={torogoz} alt="torogoz" />
                     </div>
                 </div>
                 <div className="flexItem">
-                    <h2 className="title">Work</h2>
+                    <h2 className="title">Bio</h2>
                     <p className="pDesc">
-                        I'm a Full Stack Software Engineer based in Los Angeles, CA. My experience
-                        includes: designing, developing and deploying large scale enterprise applications. When
-                        I am not coding I am either training Jiu Jitsu, watching anime, or eating ramen.
+                    I’m a Software Architect with experience designing and building secure, 
+                    large-scale enterprise applications, DevOps pipelines, and cloud-based 
+                    architectures. I focus on identity-driven security, secrets management, 
+                    and network isolation using Azure services like Entra ID, Key Vault, 
+                    and virtual networks. When I’m not coding, you’ll usually find me training 
+                    jiu jitsu or chasing after my two kids!
                     </p>
-                    <div className="myPortfolioBtn" onClick={() => {window.location.href=`/work`}}>My Portfolio &nbsp; &nbsp;{arrow}</div>
                 </div>
                 <div className="flexItem">
                     <h2 className="title">Timeline</h2>
@@ -113,6 +116,14 @@ function Landing() {
                             <p className="inlineTxt">Software Engineer II @ Kinecta Federal Credit Union</p>
                         </div>
                     </div>
+                    <div className="flexTimeline">
+                        <div>
+                            <h3 className="yearTitle inlineTxt">2024</h3>
+                        </div>
+                        <div className="timelineDesc">
+                            <p className="inlineTxt">.NET Developer @ Los Angeles Unified School District</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="flexItem">
                     <h2 className="title">Find Me</h2>
@@ -134,12 +145,12 @@ function Landing() {
                             </a>
                         </div>
                     </div>
-                    <div className="flexSocials" onClick={() => {window.location.href=`https://github.com/landaverde15`}}>
+                    <div className="flexSocials" onClick={() => {window.location.href=`https://www.linkedin.com/in/erik-landaverde-a795b8287/`}}>
                         <div>
-                            <img className="socialsLogo" src={gh} alt="github" />
+                            <img className="socialsLogo linkedInLogo" src={li} alt="linked in" />
                         </div>
                         <div>
-                            <p className="inlineTxt socialsDesc">@Landaverde15</p>
+                            <p className="inlineTxt socialsDesc">@Erik-Landaverde</p>
                         </div>
                     </div>
                 </div>
