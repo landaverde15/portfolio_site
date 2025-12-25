@@ -18,9 +18,6 @@ function Header() {
         <nav className="headerNav">
             <div className="headerNavDiv" id="headerNavDiv1" onClick={() => {window.location.reload();}}>
                 <div className="headerNavInnerDiv">
-                    <img className="headerLogo" src={headerLogo} alt="Judo logo" />
-                </div>
-                <div className="headerNavInnerDiv">
                     <h1 className="headerNavName">Erik Landaverde</h1>
                 </div>
             </div>
