@@ -9,17 +9,18 @@ import dl from '../Images/download.png';
 import li from '../Images/linkedin.png';
 import resume from '../Images/ErikResume.pdf';
 import { HashLoader } from 'react-spinners';
+import Header from '../ReusableComponents/Header';
 
 function Landing() {
 
     let arrow: string = "  >";
-    let arrow2:string = "->";
-    let currentYear:number = new Date().getFullYear();
+    let arrow2: string = "->";
+    let currentYear: number = new Date().getFullYear();
     let [showLoading, setShowLoading] = useState<boolean>(true);
     let [showImage, setShowImage] = useState<boolean>(false);
 
     useEffect(() => {
-        setTimeout(() => {setShowLoading(false); setShowImage(true)}, 3000);
+        setTimeout(() => { setShowLoading(false); setShowImage(true) }, 3000);
     });
 
     return (
@@ -27,7 +28,7 @@ function Landing() {
             <div className="flexColumn">
                 <div className="flexItem flexItemSelfPic">
                     <div>
-                        {showLoading ? <div className="loaderDiv"><HashLoader color="#ffffff"/></div> : ""}
+                        {showLoading ? <div className="loaderDiv"><HashLoader color="#ffffff" /></div> : ""}
                         {showImage ? <img className="landingCircleImg" src={selfie} alt="self picture" /> : ""}
                     </div>
                 </div>
@@ -49,12 +50,12 @@ function Landing() {
                 <div className="flexItem">
                     <h2 className="title">Bio</h2>
                     <p className="pDesc">
-                    I’m a Software Architect with experience designing and building secure, 
-                    large-scale enterprise applications, DevOps pipelines, and cloud-based 
-                    architectures. I focus on identity-driven security, secrets management, 
-                    and network isolation using Azure services like Entra ID, Key Vault, 
-                    and virtual networks. When I’m not coding, you’ll usually find me training 
-                    jiu jitsu or chasing after my two kids!
+                        I’m a Software Architect with experience designing and building secure,
+                        large-scale enterprise applications, DevOps pipelines, and cloud-based
+                        architectures. I focus on identity-driven security, secrets management,
+                        and network isolation using Azure services like Entra ID, Key Vault,
+                        and virtual networks. When I’m not coding, you’ll usually find me training
+                        jiu jitsu or chasing after my two kids!
                     </p>
                 </div>
                 <div className="flexItem">
@@ -126,7 +127,7 @@ function Landing() {
                 </div>
                 <div className="flexItem">
                     <h2 className="title">Find Me</h2>
-                    <div className="flexSocials" onClick={() => {window.location.href=`https://www.instagram.com/eazydarce/`}}>
+                    <div className="flexSocials" onClick={() => { window.location.href = `https://www.instagram.com/eazydarce/` }}>
                         <div>
                             <img className="socialsLogo" src={ig} alt="instagram" />
                         </div>
@@ -144,7 +145,7 @@ function Landing() {
                             </a>
                         </div>
                     </div>
-                    <div className="flexSocials" onClick={() => {window.location.href=`https://www.linkedin.com/in/erik-landaverde-a795b8287/`}}>
+                    <div className="flexSocials" onClick={() => { window.location.href = `https://www.linkedin.com/in/erik-landaverde-a795b8287/` }}>
                         <div>
                             <img className="socialsLogo linkedInLogo" src={li} alt="linked in" />
                         </div>
@@ -158,6 +159,7 @@ function Landing() {
                 </div>
             </div>
         </div>
+
     );
 }
 
