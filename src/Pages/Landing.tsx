@@ -124,6 +124,14 @@ function Landing() {
                             <p className="inlineTxt">.NET Developer @ Los Angeles Unified School District</p>
                         </div>
                     </div>
+                    <div className="flexTimeline">
+                        <div>
+                            <h3 className="yearTitle inlineTxt">2026</h3>
+                        </div>
+                        <div className="timelineDesc">
+                            <p className="inlineTxt">Creator & Founder @ ToroAI</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="flexItem">
                     <h2 className="title">Find Me</h2>
